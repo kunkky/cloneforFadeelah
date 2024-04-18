@@ -67,7 +67,7 @@ const SignUp = () => {
                 <p className=' font-semibold'>We’ll never share your details. See our Privacy Policy.</p>
             </div>
             <div className="flex items-center justify-between mt-8 ">
-              <button type="submit" className="shadow appearance-none border rounded-lg w-full py-4 bg-[#1A56DB] text-white px-3 font-extrabold leading-tight focus:outline-none focus:shadow-outline" >Create account</button>
+              <Link to="./../dashboard" className="text-center shadow appearance-none border rounded-lg w-full py-4 bg-[#1A56DB] text-white px-3 font-extrabold leading-tight focus:outline-none focus:shadow-outline" >Create account</Link>
             </div>
             <div className=' mt-5 text-center font-bold '>
                 <p>Already have an account? <Link className='text-[#76A9FA] cursor-pointer' to="./../signin"> log in</Link></p>
