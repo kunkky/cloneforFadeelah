@@ -9,6 +9,8 @@ import avartar from "../assets/avartar.svg";
 import weight from "../assets/weight.svg";
 import lang from "../assets/language.svg";
 import signout from "../assets/signout.svg";
+import DashboardHeader from "./DashboardHeader";
+import WelcomeCard from "./WelcomeCard";
 
 const DashboardMain = () => {
   const card = [
@@ -49,24 +51,9 @@ const DashboardMain = () => {
   return (
     <div className="w-full h-full min-h-screen flex flex-row ">
         <div className="h-full min-w-[65%] bg-[#EBF5FF] rounded-l-[30px] p-5">
-          <div className=" flex justify-between">
-            <div>
-              <img src={logo} alt="Logo" />
-            </div>
-            <div className="flex gap-7 justify-center items-center">
-              <div>
-                <img src={bell} width={45} alt="Bell" />
-              </div>
-              <div>
-                <img src={todayBtn} width={100} alt="Today Button" />
-              </div>
-            </div>
-          </div>
-          <div className="bg-white mt-10 leading-8 p-6 rounded-2xl shadow-md h-[auto] min-h-[15%]">
-            <h2 className="font-bold text-[#233876] text-2xl">Hello, Jacob Jones</h2>
-            <p>Welcome to Mindfull, your one-stop to sobriety</p>
-            <h2 className="text-[#233876] font-semibold">Track your mood and daily activities</h2>
-          </div>
+               <DashboardHeader/>
+
+   <WelcomeCard/>
           <div className="grid grid-cols-3 justify-between gap-5 items-center mt-2 h-auto min-h-[35%]">
             {card.map((item, index) => (
               <div key={index} className=" h-auto bg-white m-4 p-4 rounded-lg shadow-md">
