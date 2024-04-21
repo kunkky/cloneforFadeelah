@@ -11,6 +11,7 @@ import lang from "../assets/language.svg";
 import signout from "../assets/signout.svg";
 import DashboardHeader from "./DashboardHeader";
 import WelcomeCard from "./WelcomeCard";
+import User from "./User";
 
 const DashboardMain = () => {
   const card = [
@@ -51,9 +52,8 @@ const DashboardMain = () => {
   return (
     <div className="w-full h-full min-h-screen flex flex-row ">
         <div className="h-full min-w-[65%] bg-[#EBF5FF] rounded-l-[30px] p-5">
-               <DashboardHeader/>
-
-   <WelcomeCard/>
+          <DashboardHeader/>
+          <WelcomeCard/>
           <div className="grid grid-cols-3 justify-between gap-5 items-center mt-2 h-auto min-h-[35%]">
             {card.map((item, index) => (
               <div key={index} className=" h-auto bg-white m-4 p-4 rounded-lg shadow-md">
@@ -85,37 +85,7 @@ const DashboardMain = () => {
             </ul>
           </div>
         </div>
-        <div className="w-[35%] h-auto bg-[#233876] rounded-l-[30px] p-10 font-semibold">
-          <div className="flex flex-col gap-12 text-white">
-            <div className="border-8 rounded-lg p-3">
-              <div className="flex flex-col items-center py-5">
-                <img src={avartar} alt="Avatar" />
-                <p>Jacob Jones</p>
-                <p>25 years</p>
-                <div className="grid grid-cols-3 justify-between gap-1 mt-10">
-                  {card2.map((item, index) => (
-                    <div key={index} className="flex flex-col items-center text-center bg-[#D9D9D9] p-3 rounded-lg text-black gap-1">
-                       {item.icon}  
-                       {item.text}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-            <div className="border-8 rounded-lg flex flex-col p-5 gap-5 h-auto min-h-[30vh] items-center justify-center">
-              <div className="p-3 bg-[#D9D9D9] rounded-lg text-black">Upcoming Appointment</div>
-              <div className=" bg-white text-black p-5 rounded-lg">
-                <p>Session with Dr Lu</p>
-                <hr />
-                <p>Community Support</p>
-                <p>Support</p>
-                <p>Meetings</p>
-                <hr />
-                <p>Yoga</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <User/>
       </div>
   )
 }
