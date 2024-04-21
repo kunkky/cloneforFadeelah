@@ -1,14 +1,7 @@
-import logo from "../assets/logo.svg";
-import bell from "../assets/bell.svg";
-import todayBtn from "../assets/Todaybtn.svg";
 import angry from "../assets/angry.svg";
 import chart from "../assets/chart.svg";
 import datepicker from "../assets/datepicker.svg";
 import bigchart from "../assets/bigchart.svg";
-import avartar from "../assets/avartar.svg";
-import weight from "../assets/weight.svg";
-import lang from "../assets/language.svg";
-import signout from "../assets/signout.svg";
 import DashboardHeader from "./DashboardHeader";
 import WelcomeCard from "./WelcomeCard";
 import User from "./User";
@@ -35,20 +28,7 @@ const DashboardMain = () => {
     }
   ];
 
-  const card2 = [
-    {
-      icon: <img src={weight} />,
-      text: "Weight 58kg"
-    },
-    {
-      icon: <img src={lang} />,
-      text: "Language"
-    },
-    {
-      icon: <img src={signout} />,
-      text: "Sign Out"
-    }
-  ];
+  
   return (
     <div className="w-full h-full min-h-screen flex flex-row ">
         <div className="h-full min-w-[65%] bg-[#EBF5FF] rounded-l-[30px] p-5">
