@@ -1,6 +1,6 @@
 
 import DashboardSideBar from "../component/DashboardSideBar";
-import GetTeraphyMain from "../component/GetTeraphyMain";
+import TeraphyScheduler from "../component/TeraphyScheduler";
 
 const Dashboard = () => {
   
@@ -9,7 +9,7 @@ const Dashboard = () => {
    
     <div className="flex flex-row">
       <DashboardSideBar/>
-      <GetTeraphyMain/>
+      <TeraphyScheduler/>
       
     </div>
   );
